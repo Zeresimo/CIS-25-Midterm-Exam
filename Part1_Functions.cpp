@@ -1,15 +1,16 @@
 #include <iostream>
+#include <cmath> // For sqrt function
 using namespace std;
 
 // Receives float values for length and width, and returns the area of a rectangle
-calculateArea(float length, float width)
+float calculateArea(float length, float width)
 {
     return length * width; // Area = length * width
 }
 
 // Checks if given number is a prime number
 // “The smallest factor of a number greater than one cannot be greater than the square root of that number.”
-isPrime(int number)
+bool isPrime(int number)
 {
     if (number <= 1) // Prime numbers are greater than 1
         return false;
